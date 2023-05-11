@@ -1,0 +1,31 @@
+{% load widget_tweaks %}
+
+<!DOCTYPE html>
+{%load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud </title>
+    <link rel="stylesheet" href="{% static 'myapp/css/bootstrap.css' %}">
+</head>
+
+<body class="bg-primary text-white" style="background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);">
+    <div class="container mt-5">
+        <h2 class="text-center alert alert-danger text-light"  style="background: rgb(34,193,195);
+        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);">Function Based View ModelForm CRUD Project</h2>
+        
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+    <script src="{% static 'myapp/js/bootstrap.js' %}"></script>
+    <script src="{% static 'myapp/js/jquery.js' %}"></script>
+    <script src="{% static 'myapp/js/popper.js' %}"></script>
+</body>
+
+</html>
